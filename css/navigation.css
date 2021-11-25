@@ -39,4 +39,31 @@
 
 .navigation__link_netflix:hover, .navigation__link_okko:hover, .navigation__link_kinopoisk:hover {
     background-color: #FFFFFF;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.7);
+}
+
+.navigation__btn {
+    display: none;
+}
+
+@media (max-width: 650px) {
+    .navigation {
+        position: relative;
+    }
+    .navigation__list {
+        display: none;
+        position: absolute;
+        flex-direction: column;
+        top: 20px;
+        right: 0;
+        gap: 10px;
+    }
+
+    .navigation__btn {
+        display: block;
+    }
+
+    .navigation__list_active {
+        display: flex;
+    }
 }

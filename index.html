@@ -4,10 +4,16 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preload" 
+			href="fonts/ibm-plex-mono-latin_cyrillic-500.woff2"
+			as="font"
+			type="font/woff2"
+			crossorigin>
 		<link rel="stylesheet" href="css/index.css">
+		<script src="js/index.js" type="module"></script>
 		<title>The Witcher</title>
 	</head>
-	<body>
+	<body class="page">
 		<header class="header">
 			<div class="container header__container">
 				<img src="img/logo.svg" alt="logo" class="header__logo" />
@@ -27,18 +33,21 @@
 							></a>
 						</li>
 					</ul>
+					<button class="navigation__btn burger">
+						<span class="burger__line"></span>
+					</button>
 				</nav>
 			</div>
 		</header>
 		<section class="present">
-			<div class="container">
+			<div class="container present__container">
 				<div class="present__hero">
 					<h1 class="present__title">Ведьмак</h1>
 					<p class="present__tagline">
 						Те, кто связан предназначением, всегда найдут друг друга
 					</p>
 					<a href="https://youtu.be/PQ59CmCyOk4" class="present__btn"
-						>Смотреть трейлер</a
+						></a
 					>
 				</div>
 				<div class="present__tabs tabs">
