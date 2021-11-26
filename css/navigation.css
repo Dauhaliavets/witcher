@@ -46,17 +46,17 @@
     display: none;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 750px) {
     .navigation {
         position: relative;
     }
     .navigation__list {
         display: none;
-        position: absolute;
-        flex-direction: column;
-        top: 20px;
-        right: 0;
-        gap: 10px;
+    }
+    .navigation__link { 
+        display: block;
+        width: 32px;
+        height: 32px;
     }
 
     .navigation__btn {
@@ -65,5 +65,10 @@
 
     .navigation__list_active {
         display: flex;
+        flex-direction: column;
+        top: 35px;
+        right: 0;
+        position: absolute;
+        gap: 10px;
     }
 }
