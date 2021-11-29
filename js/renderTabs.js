@@ -9,7 +9,7 @@ const getCard = function (dataCard) {
 		case 'video':
 			li.classList.add('card_video');
 			li.innerHTML = `
-                <a href="${dataCard.link}" class="card__link">
+                <a href="${dataCard.link}" class="card__link tube">
                     <figure>
                         <img
                             src="${dataCard.preview}"
@@ -55,8 +55,6 @@ const renderTabs = async (i = 0) => {
 	const type = tabsContent[i].dataset.base;
 
 	const data = await getData(`db/${type}.json`);
-
-	// console.log(data);
 
 	const listElem = data.map(getCard, type);
 
